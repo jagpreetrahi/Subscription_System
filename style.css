@@ -1,0 +1,51 @@
+body{
+    font-family: Arial, sans-serif;
+    background : url('recurly.png');
+    background-repeat : no-repeat;
+     background-size : cover;
+     background-attachment: scroll;
+     background-position : center;
+     background-clip: padding-box;
+    height: 100vh;
+    display: flex;
+   
+}
+.login-container{
+    background: #FDFDFD;
+    padding: 20px;
+    border-radius: 20px;
+    margin-left: 100px;
+    margin-top: 100px;
+    position:fixed;
+    width: 300px;
+    height: 50%;
+    text-align : center;
+}
+
+input{
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid purple;
+    color : purple;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #CBC3E3;
+    margin-top: 10px;
+    font-weight: bold;
+    border: none;
+    color: black;
+    font-family : sans;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 30%;
+}
+
+
+button:hover {
+    background-color: purple;
+}
+

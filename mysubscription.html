@@ -19,7 +19,7 @@
         <h1>Manage Your Subscriptions</h1>
     
         <div class="subscription-details">
-            <h2>Your Active Subscription</h2>
+            <h2>Your Active Subscription Receipt</h2>
             <div class="subscription-card">
                 <h3>Plan: </h3>
                 <p>Start Date: </p>
@@ -29,21 +29,26 @@
                 <div class="subscription-features">
                     <p>Features:</p>
                     <ul>
-                        <li><span class="tick">✔</span> Unlimited Storage</li>
-                        <li><span class="tick">✔</span> 24/7 Support</li>
-                        <li><span class="cross">✘</span> Custom Integrations</li>
+                        <li><span class="tick">✔</span> </li>
+                        <li><span class="tick">✔</span> </li>
+                        <li><span class="cross">✘</span> </li>
                     </ul>
                 </div>
                 <div class="subscription-actions">
                     <button onclick="upgradePlan()">Upgrade Plan</button>
                     <button onclick="cancelSubscription()">Cancel Subscription</button>
                 </div>
-
-                <div id="upgrade-form" class="upgrade-form" >
+                
+                <div id="upgrade-form" class="upgrade-form"  style= "display: none;">
                     <h2>Upgrade Your Plan</h2>
                     <form id="upgrade-plan-form">
                       <label for="current-plan">Current Plan:</label>
-                      <input type="text" id="current-plan" name="current-plan" readonly><br><br>
+                      <select id="new-plan" name="new-plan" required>
+                        <option value="" disabled selected>Select a plan</option>
+                        <option value="Basic">Basic Plan</option>
+                        <option value="Standard">Standard Plan</option>
+                        <option value="Premium">Premium Plan</option>
+                      </select><br><br>
                       
                       <label for="new-plan">New Plan:</label>
                       <select id="new-plan" name="new-plan" required>
@@ -54,7 +59,12 @@
                       </select><br><br>
                       
                       <label for="subscription-status">Subscription Status:</label>
-                      <input type="text" id="subscription-status" name="subscription-status" readonly><br><br>
+                      <select id="subscription-plan" name="subscription-status" required>
+                        <option value="" disabled selected>Select a plan</option>
+                        <option value="Active">Active Plan</option>
+                        <option value="Expire">Expire Plan</option>
+                      </select>
+                      
                       
                       <button type="submit">Submit Upgrade</button>
                       <button type="button" onclick="hideUpgradeForm()">Cancel</button>
@@ -68,13 +78,13 @@
         
     
         <div class="billing-details">
-            <h2>Billing Information</h2>
-            <p>Last Payment: January 1, 2024, $49.99</p>
+            <h2>Thanks You for Subscription </h2>
+           
             
         </div>
 
     </div>
     
-      
+   <script src="mysubscription.js"></script>
 </body>
 </html>

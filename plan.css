@@ -126,6 +126,11 @@ body {
     margin: 5px 0;
 }
 
+.plan-card ul li {
+   color: purple;
+}
+
+
 .plan-card button {
     background-color: #007bff;
     color: black;

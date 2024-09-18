@@ -17,9 +17,16 @@ document.addEventListener('DOMContentLoaded' , function (){
         hideUpgradeForm();
     }
 
+    function cancelSubscription(){
+          document.getElementById('subscription-details').style.display = 'none';
+    }
+
     window.upgradePlan = upgradePlan;
     window.hideUpgradeForm = hideUpgradeForm;
     window.handleUpgradeSubmit = handleUpgradeSubmit;
+    window.cancelSubscription = cancelSubscription;
+
+   
     
 });
 

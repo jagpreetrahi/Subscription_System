@@ -1,24 +1,7 @@
 
 
 
-// let switchPage = document.getElementsByClassName('container').addEventListener('submit' , function(event){
-//     event.preventDefault() // prevent default form submission
 
-//     const username = document.getElementById('username').value;
-//     const password = document.getElementById('password').value;
-
-    
-
-//     if(username  && password )
-//     {
-//         window.location.href = 'dashboard.html';
-//     }
-
-//     else{
-//         alert('Invalid email & password');
-//     }
-
-// });
 
   // Handle login
   document.addEventListener('DOMContentLoaded' ,function(){
@@ -52,6 +35,7 @@
          e.preventDefault(); // Prevent form submission
   
           const username = document.querySelector('.input').value;
+          
           const password = document.querySelector('.input1').value;
   
           if (username && password) {
@@ -67,11 +51,11 @@
     registerForm.addEventListener('submit', function(e) {
         e.preventDefault(); // Prevent form submission
   
-        const name = document.querySelector('.containerBack input[type="text"]').value;
-        const email = document.querySelector('.containerBack input[type="email"]').value;
-        const password = document.querySelector('.containerBack input[type="password"]').value;
+        const name = document.querySelector('.register-input').value;
+        const email = document.querySelector('.register-input1').value;
+        const password = document.querySelector('.register-input2').value;
   
-        if (name && email && password) {
+        if (name &&email && password) {
             // Simple check for demo purposes, can be replaced by an actual registration process.
             console.log('Registration successful');
             window.location.href = 'dashboard.html'; // Redirect to dashboard

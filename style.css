@@ -18,6 +18,7 @@ body{
     /* justify-content : center;
     align-items : center; */
     font-family: "Source Sans 3", sans-serif;
+    overflow-y: hidden;
     
    
 }
@@ -79,6 +80,32 @@ body{
     background-color : inherit;
 }
 .input1{
+    height : 4vh;
+    width  : 30vh;
+    margin-left : -2vh;
+    border : none;
+    outline  : none;
+    background-color : inherit;
+}
+
+.register-input{
+    height : 4vh;
+    width  : 30vh;
+    margin-left : -2vh;
+    border : none;
+    outline  : none;
+    background-color : inherit;
+}
+.register-input1{
+    height : 4vh;
+    width  : 30vh;
+    margin-left : -2vh;
+    border : none;
+    outline  : none;
+    background-color : inherit;
+}
+
+.register-input2{
     height : 4vh;
     width  : 30vh;
     margin-left : -2vh;

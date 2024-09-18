@@ -21,11 +21,11 @@
         <div class="subscription-details">
             <h2>Your Active Subscription</h2>
             <div class="subscription-card">
-                <h3>Plan: Premium</h3>
-                <p>Start Date: January 1, 2024</p>
-                <p>Next Billing Date: February 1, 2024</p>
-                <p>Status: Active</p>
-                <p>Price: $49.99/month</p>
+                <h3>Plan: </h3>
+                <p>Start Date: </p>
+                <p>Next Billing Date: </p>
+                <p>Status: </p>
+                <p>Price: </p>
                 <div class="subscription-features">
                     <p>Features:</p>
                     <ul>
@@ -38,20 +38,41 @@
                     <button onclick="upgradePlan()">Upgrade Plan</button>
                     <button onclick="cancelSubscription()">Cancel Subscription</button>
                 </div>
+
+                <div id="upgrade-form" class="upgrade-form" >
+                    <h2>Upgrade Your Plan</h2>
+                    <form id="upgrade-plan-form">
+                      <label for="current-plan">Current Plan:</label>
+                      <input type="text" id="current-plan" name="current-plan" readonly><br><br>
+                      
+                      <label for="new-plan">New Plan:</label>
+                      <select id="new-plan" name="new-plan" required>
+                        <option value="" disabled selected>Select a plan</option>
+                        <option value="Basic">Basic Plan</option>
+                        <option value="Standard">Standard Plan</option>
+                        <option value="Premium">Premium Plan</option>
+                      </select><br><br>
+                      
+                      <label for="subscription-status">Subscription Status:</label>
+                      <input type="text" id="subscription-status" name="subscription-status" readonly><br><br>
+                      
+                      <button type="submit">Submit Upgrade</button>
+                      <button type="button" onclick="hideUpgradeForm()">Cancel</button>
+                    </form>
+                  </div>
             </div>
         </div>
+
+        <div></div>
     
-        <div class="usage-tracking">
-            <h2>Subscription Usage</h2>
-            <p>Users: 3 out of 10</p>
-            <p>Storage: 50GB out of 100GB</p>
-        </div>
+        
     
         <div class="billing-details">
             <h2>Billing Information</h2>
             <p>Last Payment: January 1, 2024, $49.99</p>
-            <p><a href="#">View Transaction History</a></p>
+            
         </div>
+
     </div>
     
       

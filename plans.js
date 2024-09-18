@@ -1,20 +1,4 @@
-// function openSubscriptionForm(plan) {
 
-//    var planSelect =  document.getElementById('plan').value = plan;
-
-     
-     
-
-   
-
-   
-
-//     document.getElementById('subscription-form').style.display = 'block';
-// }
-
-// function closeSubscriptionForm() {
-//     document.getElementById('subscription-form').style.display = 'none';
-// }
 
 // JavaScript code (plans.js)
 document.addEventListener('DOMContentLoaded', function() {
@@ -24,13 +8,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
        
              // Clear existing options
-        planSelect.innerHTML = '';
+        // planSelect.innerHTML = '';
 
-        // Create a new option for the selected plan
-        var option = document.createElement('option');
-        option.value = plan;
-        option.text = plan;
-        planSelect.appendChild(option);
+        // // Create a new option for the selected plan
+        // var option = document.createElement('option');
+        // option.value = plan;
+        // option.text = plan;
+        // planSelect.appendChild(option);
 
       
 

@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Subscription Management</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
 
@@ -16,18 +20,53 @@
 
 
 
-         <div class="container">
-            <div class="login-container">
-                <h2>Login</h2>
-                <form action="/login" id="login-form">
-                    <input type="text" id="username" placeholder="User Email" name="username" required>
-                    <input type="password" id="password" placeholder="Password" name="password" required>
-                    <button type="submit">Login</button>
-                </form>
-                
-            </div>
+        <div class="container containerFront">
+           <div class="top">
+              <span>Login</span>
+           </div>
 
+           <div class="form">
+              <form>
+                <div class="inputBox inputBoxFront">
+                    <label><i class="fa-solid fa-user"></i></label>
+                    <input type="text" placeholder="UserName" class="input" required>
+                </div>
+                <div class="inputBox inputBoxFront">
+                    <label><i class="fa-solid fa-lock"></i></label>
+                    <input type="text" placeholder="Password" class="input1" required>
+                </div>
+                <button class="submit">Sign In</button>
+                <div class="user">Don't have an account? <span class="newUser">Sign  Up</span></div>
+              </form>
+           </div>
+           
         </div>
+        <div class="container containerBack">
+            <div class="top topBack">
+               <span>Login</span>
+            </div>
+ 
+            <div class="form formBack">
+               <form>
+                 <div class="inputBox inputBoxBack">
+                     <label><i class="fa-solid fa-n"></i></label>
+                     <input type="text" placeholder="Name" class="input" required>
+                 </div>
+                 <div class="inputBox inputBoxBack">
+                    <label><i class="fa-solid fa-envelope"></i></label>
+                    <input type="email" placeholder="Email" class="input" required>
+                </div>
+                 <div class="inputBox inputBoxBack">
+                     <label><i class="fa-solid fa-lock"></i></label>
+                     <input type="password" placeholder="Password" class="input" required>
+                 </div>
+                 <button class="submit">Register</button>
+                 <div class="user">Don't have an account? <span class="existingUser">Register Now</span></div>
+               </form>
+            </div>
+            
+         </div>
+        
 
         
      

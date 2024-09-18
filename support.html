@@ -4,8 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Support</title>
+    <link rel="stylesheet" href="support.css">
 </head>
 <body>
-    
+
+     <!-- Navigation Bar -->
+     <nav class="navbar">
+        <a href="dashboard.html" id="home">Home</a>
+        <a href="plan.html" id="plans">Plans</a>
+        <a href="support.html" id="support">Support</a>
+        <a href="mysubscription.html" id="subscriptions">My Subscriptions</a>
+    </nav>
+    <h2>FAQs About Subscription Management</h2>
+
+    <section class="support">
+        <div class="faq-container">
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(0)">
+                    <span class="faq-icon" id="icon-0">+</span>
+                    <h3>What is your refund policy?</h3>
+                </div>
+                <div class="faq-answer" id="answer-0">
+                    <p>Our refund policy allows you to request a refund within 30 days of purchase if you are not satisfied with our services.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(1)">
+                    <span class="faq-icon" id="icon-1">+</span>
+                    <h3>How can I update my billing information?</h3>
+                </div>
+                <div class="faq-answer" id="answer-1">
+                    <p>You can update your billing information through your account settings page. Simply log in and navigate to the billing section.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(2)">
+                    <span class="faq-icon" id="icon-2">+</span>
+                    <h3>How do I contact customer support?</h3>
+                </div>
+                <div class="faq-answer" id="answer-2">
+                    <p>You can contact our customer support team via email at support@example.com or use the live chat feature on our website.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+   <script src="support.js"></script>
 </body>
 </html>

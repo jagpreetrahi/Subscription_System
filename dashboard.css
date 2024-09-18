@@ -4,14 +4,13 @@ body {
     margin: 0;
     padding: 0;
     height: 100vh;
+    background : linear-gradient(180deg, #7729aa -13.13%, #170a2d 0.17%, #0a061d 6.9%, rgba(10, 6, 30, 0.99) 36.38%, #010311 98.59%) !important;
+    
+    
     
 }
 
-#animated-text {
-    display: inline;
-    overflow: hidden;
-    white-space: nowrap;
-}
+
 
 .letter {
     display: inline;
@@ -25,10 +24,16 @@ body {
     }
 }
 
+.level{
+    display: inline;
+    opacity : 0;
+    animation: fadeIn 0.5s forwards;
+}
+
 
 /* Navbar styling */
 .navbar {
-    
+    background :#7000ff;
     justify-content:center;
     display:flex;
 
@@ -37,11 +42,11 @@ body {
 .navbar a {
     float: left;
     display: block;
-    color: black;
+    color: white;
     padding: 14px 40px;
     text-decoration: none;
     font-size: 20px;
-    font-family: 'Poppins'
+    font-family: 'Poppins';
 }
 
 .navbar a:hover {
@@ -62,19 +67,185 @@ body {
     margin-left:100px;
     font-weight: 400;
     font-size: 20px;
-    font-family: 'Poppins'
-
-}
-
-#content-text
-{
     font-family: 'Poppins';
-    display: flex;
-    margin-top: 15px;
-    font-weight: 300;
-    margin-left: 100px;
-    font-size:20px;
+    color: white;
 }
+
+.dashboard-content p{
+    margin-top : 100px;
+}
+
+#animated-text {
+    display: inline;
+    overflow: hidden;
+    white-space: nowrap;
+    position : absolute;
+    margin-top : 10px;
+    font-family : 'Poppins';
+    font-weight : large;
+    font-size : 50px;
+    margin-right : 20px;
+    
+}
+
+.image-container{
+    width :  100px;
+    display: flex;
+    margin-left : 50px;
+    margin-top : 20px;
+    
+}
+
+
+
+.img-content {
+    width: 250px ;
+    margin-left: 700px;
+    margin-top: 5px;
+}
+
+.img-content img {
+    
+    height: auto;
+    border-radius: 8px;
+}
+
+
+.section-content{
+    width : 800px;
+    height : 350px;
+    border : none;
+    border-radius : 20px;
+    
+    display : flex;
+    margin : 0 auto;
+    
+}
+.left-content span{
+     font-family : 'Poppins';
+     font-size : 40px;
+     display : flex;
+     text-align : center;
+     margin-top : 50px;
+     
+     color : white;
+}
+
+.left-content p{
+    font-family : Open sana;
+    font-size : 30px;
+    display : flex;
+    color  : white;
+}
+
+
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    width: 90%;
+    max-width: 1300px;
+    padding: 20px;
+    
+    position : absolute;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 400px;
+    height: 350px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    text-align: center;
+    margin-left : 40px;
+}
+
+.card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.content h3 {
+    margin-bottom: 10px;
+    display : flex;
+    margin-top : 10px;
+    font-family : 'Poppins';
+    font-size : 20px;
+    font-weight  : bold;
+    text-align : center;
+}
+
+.content p {
+    font-size: 16px;
+    color: #555;
+}
+
+
+.get-started {
+    padding: 40px;
+    background-color:  linear-gradient(180deg, #7729aa -13.13%, #170a2d 0.17%, #0a061d 6.9%, rgba(10, 6, 30, 0.99) 36.38%, #010311 98.59%) !important;
+    text-align: center;
+    margin-top : 550px;   
+}
+
+.get-started h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.get-started h3 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: grey;
+    padding : 5px;
+}
+
+.get-started p {
+    margin-top : 100px;
+    margin-left : 220px;
+    font-size : 20px;
+    line-height: 1.6;
+   
+    max-width: 800px;
+    color: #D3D3D3;
+}
+
+.get-started .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 20px;
+    font-size: 1em;
+    text-decoration: none;
+    color: #fff;
+    background-color: #007bff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.get-started .btn:hover {
+    background-color: #0056b3;
+}
+
+.get-started img {
+    width : 100%;
+    object-fit : cover;
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+    border-radius: 20px;
+}
+
+
+
+
 
 
 

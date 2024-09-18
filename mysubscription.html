@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Subscriptions</title>
+    <link rel="stylesheet" href="mysubscription.css">
+</head>
+<body>
+      
+    <nav class="navbar">
+        <a href="dashboard.html" id="home">Home</a>
+        <a href="plan.html" id="plans">Plans</a>
+        <a href="support.html" id="support">Support</a>
+        <a href="mysubscription.html" id="subscriptions">My Subscriptions</a>
+    </nav>
+
+    <div class="subscription-page">
+        <h1>Manage Your Subscriptions</h1>
+    
+        <div class="subscription-details">
+            <h2>Your Active Subscription</h2>
+            <div class="subscription-card">
+                <h3>Plan: Premium</h3>
+                <p>Start Date: January 1, 2024</p>
+                <p>Next Billing Date: February 1, 2024</p>
+                <p>Status: Active</p>
+                <p>Price: $49.99/month</p>
+                <div class="subscription-features">
+                    <p>Features:</p>
+                    <ul>
+                        <li><span class="tick">✔</span> Unlimited Storage</li>
+                        <li><span class="tick">✔</span> 24/7 Support</li>
+                        <li><span class="cross">✘</span> Custom Integrations</li>
+                    </ul>
+                </div>
+                <div class="subscription-actions">
+                    <button onclick="upgradePlan()">Upgrade Plan</button>
+                    <button onclick="cancelSubscription()">Cancel Subscription</button>
+                </div>
+            </div>
+        </div>
+    
+        <div class="usage-tracking">
+            <h2>Subscription Usage</h2>
+            <p>Users: 3 out of 10</p>
+            <p>Storage: 50GB out of 100GB</p>
+        </div>
+    
+        <div class="billing-details">
+            <h2>Billing Information</h2>
+            <p>Last Payment: January 1, 2024, $49.99</p>
+            <p><a href="#">View Transaction History</a></p>
+        </div>
+    </div>
+    
+      
+</body>
+</html>
